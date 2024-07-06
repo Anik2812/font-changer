@@ -33,9 +33,10 @@ function applyRandomFont() {
     const randomFont = getRandomFont();
     document.body.style.fontFamily = randomFont;
     document.getElementById('font-name').textContent = randomFont.split(',')[0];
-    document.getElementById('font-name').classList.add('bounce');
+    document.getElementById('sample-text').style.fontFamily = randomFont;
+    document.getElementById('font-display').classList.add('bounce');
     setTimeout(() => {
-        document.getElementById('font-name').classList.remove('bounce');
+        document.getElementById('font-display').classList.remove('bounce');
     }, 1000);
 }
 
@@ -47,9 +48,9 @@ function changeBackgroundColor() {
 function updateFact() {
     const factElement = document.getElementById('fact');
     factElement.textContent = getRandomFact();
-    factElement.classList.add('bounce');
+    document.getElementById('fact-display').classList.add('bounce');
     setTimeout(() => {
-        factElement.classList.remove('bounce');
+        document.getElementById('fact-display').classList.remove('bounce');
     }, 1000);
 }
 

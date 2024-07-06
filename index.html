@@ -3,49 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Font Roulette - Hack Club Arcade</title>
+    <title>Font Fiesta - Hack Club Arcade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Font Roulette!</h1>
-        <p>Where typography meets chaos, and readability is optional.</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-font"></i> Font Fiesta!</h1>
+            <p>Where typography throws a party, and readability is the guest of honor.</p>
+        </header>
 
-    <main>
-        <section id="font-showcase">
-            <h2>Today's Lucky Font:</h2>
-            <p id="font-name">Loading...</p>
-            <button id="change-font">Spin the Font Wheel!</button>
-        </section>
+        <main>
+            <section id="font-showcase" class="card">
+                <h2>Today's Font Superstar:</h2>
+                <div id="font-display">
+                    <p id="font-name">Loading...</p>
+                    <p id="sample-text">The quick brown fox jumps over the lazy dog</p>
+                </div>
+                <button id="change-font" class="btn"><i class="fas fa-random"></i> Spin the Font Wheel!</button>
+            </section>
 
-        <section id="fun-text">
-            <h3>Random Fun Facts:</h3>
-            <p id="fact">Click the button to learn something useless!</p>
-            <button id="new-fact">Give me a fact!</button>
-        </section>
+            <section id="fun-text" class="card">
+                <h2>Random Tech Trivia:</h2>
+                <div id="fact-display">
+                    <p id="fact">Click the button to learn something cool!</p>
+                </div>
+                <button id="new-fact" class="btn"><i class="fas fa-lightbulb"></i> Enlighten Me!</button>
+            </section>
 
-        <section class="info-section">
-            <h2>About Hack Club</h2>
-            <p>Hack Club: Where coding meets chaos, and teenagers rule the digital world!</p>
-            <ul>
-                <li>We've given away 100k+ in hardware grants (No, you can't have a pet robot)</li>
-                <li>Hosted the world's longest hackathon on land (Sleep is for the weak!)</li>
-                <li>Brought 183 teenagers to SF for a hackathon (City survived, barely)</li>
-            </ul>
-        </section>
+            <section class="info-section card">
+                <h2><i class="fas fa-code"></i> About Hack Club</h2>
+                <p>Hack Club: Where coding meets creativity, and teenagers redefine the digital frontier!</p>
+                <ul>
+                    <li><i class="fas fa-gift"></i> We've given away 100k+ in hardware grants (No, you can't have a pet robot... yet)</li>
+                    <li><i class="fas fa-clock"></i> Hosted the world's longest hackathon on land (Sleep is for the weak!)</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Brought 183 teenagers to SF for a hackathon (City survived, barely)</li>
+                </ul>
+            </section>
 
-        <section class="info-section">
-            <h2>Hack Club Arcade</h2>
-            <p>Arcade: Where high schoolers trade sleep for code and dreams for tickets!</p>
-            <p>Visit <a href="https://hackclub.com/arcade" target="_blank">hackclub.com/arcade</a> to start your journey to digital fame and fortune*!</p>
-            <p><small>* Fortune not guaranteed. Fame limited to your Discord server.</small></p>
-        </section>
-    </main>
+            <section class="info-section card">
+                <h2><i class="fas fa-gamepad"></i> Hack Club Arcade</h2>
+                <p>Arcade: Where high schoolers trade sleep for code and dreams for tickets!</p>
+                <p>Visit <a href="https://hackclub.com/arcade" target="_blank">hackclub.com/arcade</a> to start your journey to digital fame and fortune*!</p>
+                <p><small>* Fortune not guaranteed. Fame limited to your Discord server.</small></p>
+            </section>
+        </main>
 
-    <footer>
-        <p>© 2024 Font Roulette - A product of too much caffeine and not enough sleep</p>
-    </footer>
+        <footer>
+            <p>© 2024 Font Fiesta - Powered by caffeine, curiosity, and a dash of chaos</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
